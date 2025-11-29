@@ -12,7 +12,6 @@ import pandas as pd
 import ruamel.yaml as yaml
 import tqdm
 
-
 COLORS = [
     '#0022ff', '#33aa00', '#ff0011', '#ddaa00', '#cc44dd', '#0088aa',
     '#001177', '#117700', '#990022', '#885500', '#553366', '#006666',
@@ -48,7 +47,6 @@ def load_run(filename, xkeys, ykeys, ythres=None):
   except Exception as e:
     elements.print(f'Exception loading {filename}: {e}', color='red')
     return None
-
 
 def load_runs(args):
   indirs = [elements.Path(x) for x in args.indirs]
