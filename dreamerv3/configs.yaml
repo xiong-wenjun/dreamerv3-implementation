@@ -70,7 +70,7 @@ defaults:
     debug: True
 
   jax:
-    platform: cuda
+    platform: cpu
     compute_dtype: bfloat16
     policy_devices: [0]
     train_devices: [0]
